@@ -1,0 +1,23 @@
+#searchByName {
+    width: max-content;
+}
+
+#searchMovieInput {
+    font-size: 6vw;
+    width: 60vw;
+    height: 6vh;
+}
+
+header {
+    margin: 2rem;
+}
+
+main {
+    background-color: transparent;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+.pagination {
+    gap: 2vw;
+}

@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+:root {
+    --twoRem: 2rem;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    font-family: 'Sofia Sans', sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+header {
+    flex-direction: row;
+    width: 100vw;
+}
+
+nav {
+    background-color: #0c0c0c;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    height: 8vh;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar {
+    padding: 0 2rem;
+    background-color: #3333331a;
+    backdrop-filter: blur(16px) opacity(0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+}
+
+
+.pageFinder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    height: inherit;
+}
+
+.logo > img {
+    object-fit: contain;
+    width: 3vw;
+}
+
+.nav-list a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    color: rgba(230, 230, 230, 0.833);
+    font-size: 2vw; /* Use vw for font size */
+    transition: color 0.3s ease;
+    font-weight: 100;
+    height: 100%;
+    padding: 0 1.5rem;
+}
+
+a:hover {
+    color: #000000;
+    font-weight: 700;
+    background-color: #ffffff2b;
+}
+
+#active {
+    color: #000000;
+    font-weight: 400;
+    background-color: #fff;
+}
+
+.slideBtn {
+    background-color: transparent;
+    border: none;
+    height: 4vh;
+}
+
+.slideBtn:hover {
+    cursor: pointer;
+}
+
+#rightSlide {
+    position: absolute;
+    right: 1.5vw;
+    top: calc(25vh - 2rem);
+    height: 50vh;
+}
+
+#leftSlide {
+    position: absolute;
+    left: 1.5vw;
+    top: calc(25vh - 2rem);
+    height: 50vh;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+}
+
+.navBtn {
+    position: absolute;
+    border: 1px solid #fff;
+    padding: .5rem;
+    border-radius: .25rem;
+    top: 6px;
+    right: 6px;
+}
+
+.navBtn:hover {
+    cursor: pointer;
+} 
+
+.moviesSlider {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.topMovies{
+    height: 90vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.movieContent {
+    background-image: url("../Assets/Asset\ 2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem ;
+    width: 100vw;
+    height: calc(90vh);
+}
+
+.movieContent > h1 {
+    margin: 0;
+    width: 50vw;
+    font-size: 8vw;
+}
+
+.movieContent > p {
+    width: 65vw;  
+    font-size: 2vw;  
+}
+
+.yearAndGenre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+    width: fit-content;
+
+}
+
+.yearAndGenre > span {
+    font-size: 2.5vw;
+    margin-top: 2px;
+}
+
+.longTitle {
+    width: 60vw !important;
+    font-size: 6vw !important;
+}
+
+article {
+    position: absolute;
+    background-color: #ffffff90;
+    width: 50vw;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem;
+    margin-top: -15vh;
+    z-index: 50;
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+article > h1 {
+    font-size: 3vw;
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 5px #000000;;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+main {
+    position: relative;
+    background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: 2rem ;
+    height: fit-content;
+    justify-content: center;
+}
+
+.filters > label {
+    text-align: center;
+    font-size: 2vw;
+}
+
+/* CSS */
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 15vw;
+  will-change: transform;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.moviesContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: 6rem 2rem ;
+    height: fit-content;
+    justify-content: center;
+}
+
+.slideInfo {
+    position: absolute;
+    overflow-y: scroll;
+    opacity: 0;
+    padding: 2.5vh;
+    width: -webkit-fill-available;
+    transition: all .5s;
+    background-color: #69696960;
+    backdrop-filter: blur(7px);
+    height: 40vh;
+    border-radius: .5rem;
+}
+
+
+.movieCard:hover > .slideInfo {
+    opacity: 1;
+}
+
+.movieCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.movieImg {
+    object-fit: fill;
+    width: 18vw;
+    height: 45vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .5rem;
+    box-shadow: rgba(210, 210, 210, 0.1) -4px 9px 25px -6px;
+}
+
+.movieCard > h1 {
+    font-size: 2vw;
+    width: 20vw;
+    text-align: center;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+  
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #d62d2d;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.navBtnList {
+    display: none;
+}
+
+.navBtn {
+    display: none;
+}
+@media screen and (min-width:992px){
+      .nav-item {
+      line-height:80px;
+      }
+    }

@@ -1,0 +1,151 @@
+nav {
+    overflow: visible;
+    background-color: #00000030;
+    height: 8vh;
+}
+
+main {
+    width: 83vw;
+}
+.logo > img {
+    object-fit: contain;
+    width: 10vw;
+}
+
+.navbar {
+    align-items: flex-start;
+    position: relative;
+}
+
+.navbar > div {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.navbar img {
+    height: fit-content;
+}
+
+.nav-list {
+    width: 0;
+    right: 0;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    z-index: 150;
+    background-color: black;
+    transition: all .2s;
+    overflow: hidden;
+}
+
+.nav-list-active {
+    width: 75vw;
+    display: flex;
+}
+
+.navBtn {
+    display: block;
+}
+
+.navBtnList {
+    display: block;
+    position: absolute;
+    border: 1px solid #fff;
+    padding: .5rem;
+    border-radius: .25rem;
+    top: 8px;
+    left: 10px;
+}
+
+.pageFinder {
+    height: 10vh;
+}
+
+.pageFinder > a {
+    font-size: 4vw;
+}
+
+.topMovies {
+    height: 35vh;
+}
+
+#leftSlide, #rightSlide {
+    height: 20vh;
+    top: 10vh;
+}
+
+.movieContent {
+    padding: 1rem 0;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.movieContent > h1 {
+    width: 81vw;
+    text-align: center;
+}
+
+.moviesContainer {
+    margin-top: -8vh;
+}
+
+.movieImg {
+    width: 65vw;
+    height: 55vh;
+}
+
+.longTitle {
+    width: 70vw !important;
+}
+
+footer {
+    position: relative;
+}
+
+.button-28 {
+    width: 30vw;
+    padding: 0;
+    min-height: 0;
+}
+
+article > h1 {
+    text-align: center;
+    font-size: 6vw;
+    width: 45vw;
+}
+
+.filters > label {
+    font-size: 5vw;
+}
+
+article {
+    position: relative;
+    background-color: #ffffffdd;
+    width: 80vw;
+    color: #000000;
+    display: flex;
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem;
+    z-index: 50;
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px -2px 44px, rgba(0, 0, 0, 0.22) 2px 4px 12px;
+}
+
+main {
+    height: fit-content;
+    gap: 0;
+}
+
+.slideInfo {
+    height: 50vh;
+}

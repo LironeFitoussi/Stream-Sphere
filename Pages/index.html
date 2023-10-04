@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamSphere | Homepage</title>
+    <link rel="icon" type="image/x-icon" href="../Assets/favicon.ico">
+    <script src="https://kit.fontawesome.com/9630cfcb36.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/index-mobile.css" media="screen and (max-width: 425px)">
+</head>
+
+<body>
+    <header>
+        <button class="slideBtn" id="leftSlide"><i class="fa-solid fa-angle-left" style="color: #fff;"></i></button>
+        <button class="slideBtn" id="rightSlide"><i class="fa-solid fa-chevron-right" style="color: #fff;"></i></button>
+        <div class="moviesSlider"></div>
+    </header>
+    <main>
+        <article>
+        <h1>Top Movies Rated Movies</h1>
+        <div ></div>
+        <div class="filters">
+            <label for="timeFilter">Choose a Filter:</label>
+            <form id="chooseFilter">
+                <div class="timeFilter">
+                    <select id="timeFilter" name="cars">
+                        <option value="day">By Day</option>
+                        <option value="week">By Week</option>
+                    </select>
+                </div>
+                <button class="button-28" role="button" type="submit" >Sort</button>
+            </form>
+        </div>
+    </article>
+        <div class="moviesContainer">
+
+        </div>
+    </main>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="module" src="../JavaScript/main.js"></script>
+</body>
+
+</html>

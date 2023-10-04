@@ -1,0 +1,34 @@
+body {
+  overflow-x: hidden;
+}
+
+nav {
+    position: relative;
+}
+
+form {
+  width: 100vw;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw;
+}
+
+main {
+  min-height: 50vh;
+}
+
+button {
+    width: 100%;
+}
+
+footer {
+  position: relative;
+}
+
+@media screen and (max-width: 425px) {
+  
+}

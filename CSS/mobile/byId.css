@@ -1,0 +1,114 @@
+body {
+    height: 100vh;
+    justify-content: center;
+}
+
+nav {
+    position: absolute;
+}
+
+
+main {
+    overflow: scroll;
+    position: relative;
+    left: 0vw;
+    width: 0;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    padding: 0;
+    width: 20%;
+    transition: all .5s;
+}
+
+.main-active {
+    width: 100%;
+    left: 0;
+}
+
+.backBtn {
+    z-index: 200;
+    display: flex;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    transform: rotate(180deg);
+    transition: all .7s;
+    padding: 1rem;
+    background-color: #ffffff32;
+    border-radius: .5rem;
+}
+
+.backBtn-active {
+    transform: rotate(0deg);
+}
+
+#backgroundImg {
+    position: relative;
+    filter: none;
+}
+
+article.mainMovie {
+    border-radius:  2rem 2rem 0 0 ;
+    margin-top: -5vh;
+    width: 100%;
+    display: flex;
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+.mainMovie > div {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    align-items: center;
+}
+
+.mainMovie > div > h1{
+    font-size: 9vw;
+    text-align: center;
+    margin: 1rem 2rem;
+}
+
+.actorsCont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.actorCard {
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.actorCard > h1 {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: black;  
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    font-size: 3vw;
+    height: 3vh;
+    overflow: hidden;
+}
+
+.actorCard > img {
+    height: 15vh;
+    width: 15vh;
+    border-radius: 1rem;
+}
+
+.actorCard > span {
+    display: none;
+}
+
+#moviePoster {
+    display: none;
+}
+
+footer {
+    position: fixed;
+}

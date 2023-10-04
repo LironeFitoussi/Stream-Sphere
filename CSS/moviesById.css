@@ -1,0 +1,117 @@
+main {
+    background-color: transparent;
+    width: 90vw;
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: start;
+}
+
+nav {
+    position: relative;
+}
+
+header, main {
+    padding: 2rem 0;
+}
+
+article {
+    position: relative;
+}
+
+#backgroundImg {
+    filter: blur(10px) opacity(20%);
+    position: fixed;
+    top: 0;
+    z-index: -100;
+    width: 100vw;
+}
+
+.mainMovie {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 1rem;
+    width: 100%;
+    background-color: rgba(135, 135, 135, 0.19);
+    justify-self: flex-start;
+    justify-items: center;
+}
+
+#moviePoster {
+    object-fit: cover;
+    height: auto;
+    width: 30vh;
+} 
+
+.actorsCont {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 1rem;
+    height: fit-content;
+}
+
+.actorsCont::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+.actorsCont::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.actorCard {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.actorCard > img {
+    object-fit: cover;
+    height: 20vh;
+    width: 20vh;
+    border-radius: 100%;
+}
+
+.actorCard > h1 {
+    font-size: 2vw;
+    height: 9vh;
+    overflow: hidden;
+}
+
+#imdbLogo {
+    object-fit: contain;
+    height: 3vh;
+}
+
+
+.castTitle {
+    /* position: relative; */
+    color: #000;
+    margin: 0;
+    /* margin-bottom: -5vh; */
+    width: 85%;
+    font-size: 5vw;
+    top: 5vh;
+}
+
+.error-message {
+    position: fixed;
+    top: 10vh;
+    color: #f00;
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+    background-color: aliceblue;
+}
+
+footer {
+    position: fixed;
+    z-index: 300;
+    height: 10vh;
+}
+
